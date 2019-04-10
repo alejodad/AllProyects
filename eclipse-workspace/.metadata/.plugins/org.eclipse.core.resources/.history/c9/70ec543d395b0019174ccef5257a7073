@@ -1,0 +1,31 @@
+package com.pinbus.qa.buscarviaje.interactions;
+
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+import com.pinbus.qa.buscarviaje.userinterfaces.PinbusHomePage;
+
+import static net.serenitybdd.screenplay.Tasks.instrumented;
+import net.serenitybdd.screenplay.Actor;
+import net.serenitybdd.screenplay.Interaction;
+import net.serenitybdd.screenplay.actions.Click;
+import net.thucydides.core.annotations.Step;
+
+public class FechaAjustada implements Interaction{
+
+	@Override
+	@Step("{0} ajusta el calendario")
+	public <T extends Actor> void performAs(T actor) {
+		actor.attemptsTo(
+				Click.on(PinbusHomePage.calendarioMesesIda),
+				Click.on(PinbusHomePage.calendarioAnosIda),
+				Click.on(PinbusHomePage.divAnosIda)
+				);
+		
+	}
+	
+	public static FechaAjustada ajustarCalenadrio() {
+		return instrumented(FechaAjustada.class);
+	}
+
+}

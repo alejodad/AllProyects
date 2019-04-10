@@ -1,0 +1,47 @@
+package com.pinbus.qa.buscarviaje.util;
+
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+import org.openqa.selenium.By;
+
+import com.pinbus.qa.buscarviaje.models.Viaje;
+import com.pinbus.qa.buscarviaje.userinterfaces.PinbusHomePage;
+
+import net.serenitybdd.screenplay.Actor;
+import net.serenitybdd.screenplay.actions.Click;
+
+public class Fecha {
+	public static String strObtenerFechaFormateada() {
+		Date hoy = new Date();
+		String formatoFecha = "MMMM yyyy";
+		SimpleDateFormat simpleDateFormatmesAno = new SimpleDateFormat(formatoFecha);
+		String mesAno=simpleDateFormatmesAno.format(hoy).substring(0,1).toUpperCase()+simpleDateFormatmesAno.format(hoy).substring(1,3);
+		
+		return mesAno;
+	}
+	
+	public static boolean BlnRangoAnosEstaEntre(int itemComparar, int itemInicial, int itemFinal) {
+		if(itemComparar >= itemInicial && itemComparar <= itemFinal || itemComparar==itemInicial || itemComparar==itemFinal) {
+			return true;
+		}else
+		return false;
+		}
+	
+	public static void buscarRangoDeAnos(Actor actor,Viaje viaje) {
+		String yearRange[] = PinbusHomePage.divAnosIda.resolveFor(actor).getText().split("-");
+		while (!BlnRangoAnosEstaEntre(Integer.parseInt(viaje.getSrtAnoIda()),Integer.parseInt(yearRange[0].trim()),Integer.parseInt(yearRange[1].trim()))) {
+			
+			
+			if(Integer.parseInt(viaje.getSrtAnoIda())>Integer.parseInt(yearRange[1].trim())) {
+				PinbusHomePage.btnSiguienteCalendarioIda.resolveFor(actor).click();
+			}
+			
+		 String yearRange1[] = PinbusHomePage.divAnosIda.resolveFor(actor).getText().split("-");
+		 yearRange[0]=yearRange1[0];
+		 yearRange[1]=yearRange1[1];
+			
+		}
+	}
+	
+}

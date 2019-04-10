@@ -1,0 +1,10 @@
+Feature: Buscar viaje de Medellin a bogota
+
+  @SmokeTest
+  Scenario: Busqueda exitosa de viaje de medellin a bogota
+    Given El esta en la pagina principal de Pinbus
+    When El busca el viaje de ida
+      | strRutaIda | strRutaRgreso | strDiaIdA | strMesIda | srtAnoIda | strDiaRegreso | strMesRegreso | strAnoRegrso |
+      | bogota     | medellin      |        15 | abril     |      2019 |            20 | mayo          |         2019 |
+      | bogota     | medellin      |        15 | abril     |      2019 |               |               |              |
+    Then El verifica el resultado

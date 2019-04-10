@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="BuscarViajeEnPinbusRunner (1)" project="MiPrimerScreenPlay2" tests="1" started="1" failures="0" errors="0" ignored="0">
+  <testsuite name="com.pinbus.qa.buscarviaje.runners.BuscarViajeEnPinbusRunner" time="18.649">
+    <testsuite name="Feature: Buscar viaje de Medellin a bogota" time="18.649">
+      <testcase name="Busqueda exitosa de viaje de medellin a bogota" classname="Buscar viaje de Medellin a bogota" time="18.649"/>
+    </testsuite>
+  </testsuite>
+</testrun>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="3" name="Search in google with data feature" skipped="0" tests="3" time="53.45" timestamp="2019-04-01 12:17:09"><testcase name="Search in Google"><failure message="Expected enabled element was not enabled&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'RC-PC', ip: '172.23.85.130', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'&#10;Driver info: driver.version: unknown" type="net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException">Expected enabled element was not enabled
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'RC-PC', ip: '172.23.85.130', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+Driver info: driver.version: unknown</failure><system-err>Expected enabled element was not enabled
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'RC-PC', ip: '172.23.85.130', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+Driver info: driver.version: unknown&#13;
+co.com.google.qa.myfirstserenity.page.GoogleHomePage.lookup_terms(GoogleHomePage.java:21)&#13;
+co.com.google.qa.myfirstserenity.steps.FinalUserStep.lookup_terms(FinalUserStep.java:20)&#13;
+co.com.google.qa.myfirstserenity.steps.FinalUserStep.SearchFor(FinalUserStep.java:26)&#13;
+co.com.google.qa.myfirstserenity.stepdefinitions.searchInGoogleStepDefinitions.heSearchInGooglemcompuest(searchInGoogleStepDefinitions.java:25)&#13;
+✽.he search "swithc" in googlemcompuest "hello"(src/test/resources/features/MyFirstSearchInGoogle.feature:7)&#13;
+</system-err></testcase></testsuite>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;MyFirstSearchInGoogle.feature&apos; to &apos;MyFirstSerenity/src/test/resources/features&apos;&#x0D;&#x0A;- Original project: &apos;HelloWorldCucumber&apos;&#x0D;&#x0A;- Destination element: &apos;MyFirstSerenity/src/test/resources/features&apos;&#x0D;&#x0A;- Original element: &apos;MyFirstSearchInGoogle.feature&apos;" description="Copy file" destination="=MyFirstSerenity/src\/test\/resources&lt;features" element1="src/test/resources/features/MyFirstSearchInGoogle.feature" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1554131425383" units="0" version="1.0"/>
+</session>

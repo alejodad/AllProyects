@@ -1,0 +1,5 @@
+package com.pinbus.qa.buscarviaje.questions;
+
+public class ResultadoConexion {
+
+}

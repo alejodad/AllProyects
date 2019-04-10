@@ -1,0 +1,5 @@
+package com.pinbus.qa.buscarviaje.util;
+
+public class VerificarConexion {
+
+}

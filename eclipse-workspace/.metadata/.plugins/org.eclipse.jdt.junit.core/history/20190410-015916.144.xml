@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="BuscarViajeEnPinbusRunner (1)" project="MiPrimerScreenPlay2" tests="1" started="1" failures="0" errors="1" ignored="0">
+  <testsuite name="com.pinbus.qa.buscarviaje.runners.BuscarViajeEnPinbusRunner" time="22.718">
+    <testsuite name="Feature: Buscar viaje de Medellin a bogota" time="22.718">
+      <testcase name="Busqueda exitosa de viaje de medellin a bogota" classname="Buscar viaje de Medellin a bogota" time="22.718">
+        <error>java.lang.NumberFormatException: For input string: ""&#13;
+	at java.lang.NumberFormatException.forInputString(Unknown Source)&#13;
+	at java.lang.Integer.parseInt(Unknown Source)&#13;
+	at java.lang.Integer.parseInt(Unknown Source)&#13;
+	at com.pinbus.qa.buscarviaje.util.Fecha.buscarRangoDeAnosRegreso(Fecha.java:49)&#13;
+	at com.pinbus.qa.buscarviaje.interactions.FechaAjustadaRegreso.performAs(FechaAjustadaRegreso.java:26)&#13;
+	at com.pinbus.qa.buscarviaje.interactions.FechaAjustadaRegreso$$EnhancerByCGLIB$$a4a544f.CGLIB$performAs$0(&lt;generated&gt;)&#13;
+	at com.pinbus.qa.buscarviaje.interactions.FechaAjustadaRegreso$$EnhancerByCGLIB$$a4a544f$$FastClassByCGLIB$$c1755a.invoke(&lt;generated&gt;)&#13;
+	at net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)&#13;
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:478)&#13;
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:463)&#13;
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:438)&#13;
+	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:179)&#13;
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:166)&#13;
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:72)&#13;
+	at com.pinbus.qa.buscarviaje.interactions.FechaAjustadaRegreso$$EnhancerByCGLIB$$a4a544f.performAs(&lt;generated&gt;)&#13;
+	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:223)&#13;
+	at net.serenitybdd.screenplay.Actor.perform(Actor.java:204)&#13;
+	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:161)&#13;
+	at com.pinbus.qa.buscarviaje.task.BuscarViaje.performAs(BuscarViaje.java:43)&#13;
+	at com.pinbus.qa.buscarviaje.task.BuscarViaje$$EnhancerByCGLIB$$fb45e7f3.CGLIB$performAs$0(&lt;generated&gt;)&#13;
+	at com.pinbus.qa.buscarviaje.task.BuscarViaje$$EnhancerByCGLIB$$fb45e7f3$$FastClassByCGLIB$$1fcd1335.invoke(&lt;generated&gt;)&#13;
+	at net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)&#13;
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:478)&#13;
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:463)&#13;
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:438)&#13;
+	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:179)&#13;
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:166)&#13;
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:72)&#13;
+	at com.pinbus.qa.buscarviaje.task.BuscarViaje$$EnhancerByCGLIB$$fb45e7f3.performAs(&lt;generated&gt;)&#13;
+	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:223)&#13;
+	at net.serenitybdd.screenplay.Actor.perform(Actor.java:204)&#13;
+	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:161)&#13;
+	at com.pinbus.qa.buscarviaje.stepsdefinitions.BuscarViajeEnpinbusStepsDefinitios.elBuscaElViajeDeIda(BuscarViajeEnpinbusStepsDefinitios.java:53)&#13;
+	at ✽.El busca el viaje de ida(src/test/resources/features/BuscarViajePinbus.feature:6)&#13;
+&#13;
+</error>
+      </testcase>
+    </testsuite>
+  </testsuite>
+</testrun>

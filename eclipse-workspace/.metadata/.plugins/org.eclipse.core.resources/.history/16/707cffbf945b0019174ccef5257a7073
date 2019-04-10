@@ -1,0 +1,39 @@
+package com.pinbus.qa.buscarviaje.util;
+
+import java.net.HttpURLConnection;
+import java.net.URL;
+
+import org.openqa.selenium.JavascriptExecutor;
+
+public class VerificarConexion {
+	
+	private URL direccionDePrueba;
+	private HttpURLConnection pruebaConexion;
+	private int codigohtml;
+	private int tiempoDeConexionMiliSegundos = 4000;
+	
+	
+	/**
+	 * Este evento retorna un booleano el cual indica s hay o no conexion
+	 * @return
+	 */
+public Boolean VerificarConexionIntenet() {
+	
+
+	try {	
+		this.direccionDePrueba = new URL("https://www.mercadolibre.com.co");
+		this.pruebaConexion = (HttpURLConnection) direccionDePrueba.openConnection();
+		this.pruebaConexion.setRequestMethod("HEAD");
+		this.pruebaConexion.setConnectTimeout(tiempoDeConexionMiliSegundos);
+		this.pruebaConexion.setReadTimeout(tiempoDeConexionMiliSegundos);
+		this.codigohtml = pruebaConexion.getResponseCode();
+		if (200 <= codigohtml && codigohtml <= 400) {
+			return true;
+		}else {
+			return false;
+		}
+	} catch (Exception ex) {	
+		return false;
+	}
+}
+}

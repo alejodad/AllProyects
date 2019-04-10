@@ -1,0 +1,72 @@
+package co.com.sophos.testing;
+
+import static org.junit.Assert.*;
+
+
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+import org.junit.After;
+import org.junit.AfterClass;
+import org.junit.Before;
+import org.junit.BeforeClass;
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.junit.runners.Parameterized;
+import org.junit.runners.Parameterized.Parameters;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+
+@RunWith(value= Parameterized.class)
+public class excelTest { 
+	
+	@Parameters
+	public static Iterable<String> datos() throws FileNotFoundException{
+		File excel = new File("C:\\Users\\SEMILLERO15\\Desktop\\datos.xlsx");
+		Operations objOper = new Operations(new FileInputStream(excel));
+		List<String> datos = new ArrayList<>();
+		 datos= objOper.leerExcel();
+		 return datos;
+		
+		
+	}
+	WebDriver driver;
+	
+	public excelTest() 
+	{
+		
+	}
+	
+	@BeforeClass
+	public static void setUpBeforeClass() throws Exception {
+	}
+
+	@AfterClass
+	public static void tearDownAfterClass() throws Exception {
+	}
+
+	@Before
+	public void setUp() throws Exception
+	{
+		driver.get("https://www.google.com.uy"); 
+		driver.manage().window().maximize(); 
+	}
+
+	@After
+	public void tearDown() throws Exception 
+	{
+		
+	}
+
+	@Test
+	public void test() {
+		driver.findElement(By.name("q")).sendKeys("aquiLosDatos"); 
+		driver.findElement(By.name("btnK")).submit();
+		
+	}
+
+}

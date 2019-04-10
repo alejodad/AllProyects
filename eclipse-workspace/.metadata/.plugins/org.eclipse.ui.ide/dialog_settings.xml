@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+		<item value="C:\Users\SEMILLERO15\eclipse-workspace\ScreenPlaeyPinbus"/>
+		<item value="C:\Users\SEMILLERO15\eclipse-workspace\login-gmail-screenplay"/>
+		<item value="C:\Users\SEMILLERO15\eclipse-workspace\mi-primer-screenplay"/>
+	</list>
+	<section name="ResourceNavigator">
+		<item value="Aggregate for window 1552572178972" key="ResourceWorkingSetFilter.STORE_WORKING_SET"/>
+		<item value="1" key="ResourceViewer.STORE_SORT_TYPE"/>
+	</section>
+	<section name="NewWizardAction">
+		<item value="org.eclipse.buildship.ui.wizard.project.creation" key="NewWizardSelectionPage.STORE_SELECTED_ID"/>
+		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
+			<item value="org.eclipse.buildship.ui.creationwizards"/>
+		</list>
+	</section>
+</section>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="BuscarViajeEnPinbusRunner (1)" project="MiPrimerScreenPlay2" tests="1" started="1" failures="0" errors="1" ignored="0">
+  <testsuite name="com.pinbus.qa.buscarviaje.runners.BuscarViajeEnPinbusRunner" time="21.156">
+    <testsuite name="Feature: Buscar viaje de Medellin a bogota" time="21.156">
+      <testcase name="Busqueda exitosa de viaje de medellin a bogota" classname="Buscar viaje de Medellin a bogota" time="21.156">
+        <error>net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException: Expected enabled element was not enabled&#13;
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.waitUntilEnabled(WebElementFacadeImpl.java:1005)&#13;
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.waitUntilElementAvailable(WebElementFacadeImpl.java:837)&#13;
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.type(WebElementFacadeImpl.java:718)&#13;
+	at net.serenitybdd.screenplay.actions.EnterValueIntoTarget.performAs(EnterValueIntoTarget.java:18)&#13;
+	at net.serenitybdd.screenplay.actions.EnterValueIntoTarget$$EnhancerByCGLIB$$4e987eb1.CGLIB$performAs$0(&lt;generated&gt;)&#13;
+	at net.serenitybdd.screenplay.actions.EnterValueIntoTarget$$EnhancerByCGLIB$$4e987eb1$$FastClassByCGLIB$$da8429ac.invoke(&lt;generated&gt;)&#13;
+	at net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)&#13;
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:478)&#13;
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:463)&#13;
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:438)&#13;
+	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:179)&#13;
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:166)&#13;
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:72)&#13;
+	at net.serenitybdd.screenplay.actions.EnterValueIntoTarget$$EnhancerByCGLIB$$4e987eb1.performAs(&lt;generated&gt;)&#13;
+	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:223)&#13;
+	at net.serenitybdd.screenplay.Actor.perform(Actor.java:204)&#13;
+	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:161)&#13;
+	at com.pinbus.qa.buscarviaje.task.BuscarViaje.performAs(BuscarViaje.java:36)&#13;
+	at com.pinbus.qa.buscarviaje.task.BuscarViaje$$EnhancerByCGLIB$$fb45e7f3.CGLIB$performAs$0(&lt;generated&gt;)&#13;
+	at com.pinbus.qa.buscarviaje.task.BuscarViaje$$EnhancerByCGLIB$$fb45e7f3$$FastClassByCGLIB$$1fcd1335.invoke(&lt;generated&gt;)&#13;
+	at net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)&#13;
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:478)&#13;
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:463)&#13;
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:438)&#13;
+	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:179)&#13;
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:166)&#13;
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:72)&#13;
+	at com.pinbus.qa.buscarviaje.task.BuscarViaje$$EnhancerByCGLIB$$fb45e7f3.performAs(&lt;generated&gt;)&#13;
+	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:223)&#13;
+	at net.serenitybdd.screenplay.Actor.perform(Actor.java:204)&#13;
+	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:161)&#13;
+	at com.pinbus.qa.buscarviaje.stepsdefinitions.BuscarViajeEnpinbusStepsDefinitios.elBuscaElViajeDeIda(BuscarViajeEnpinbusStepsDefinitios.java:56)&#13;
+	at ✽.El busca el viaje de ida(src/test/resources/features/BuscarViajePinbus.feature:6)&#13;
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for By.xpath: //input[@placeholder='Destino'] to be enabled (tried for 5 second(s) with 100 milliseconds interval)&#13;
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)&#13;
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)&#13;
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.waitUntilEnabled(WebElementFacadeImpl.java:1002)&#13;
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.waitUntilElementAvailable(WebElementFacadeImpl.java:837)&#13;
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.type(WebElementFacadeImpl.java:718)&#13;
+	at net.serenitybdd.screenplay.actions.EnterValueIntoTarget.performAs(EnterValueIntoTarget.java:18)&#13;
+	at net.serenitybdd.screenplay.actions.EnterValueIntoTarget$$EnhancerByCGLIB$$4e987eb1.CGLIB$performAs$0(&lt;generated&gt;)&#13;
+	at net.serenitybdd.screenplay.actions.EnterValueIntoTarget$$EnhancerByCGLIB$$4e987eb1$$FastClassByCGLIB$$da8429ac.invoke(&lt;generated&gt;)&#13;
+	at net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)&#13;
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:478)&#13;
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:463)&#13;
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:438)&#13;
+	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:179)&#13;
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:166)&#13;
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:72)&#13;
+	at net.serenitybdd.screenplay.actions.EnterValueIntoTarget$$EnhancerByCGLIB$$4e987eb1.performAs(&lt;generated&gt;)&#13;
+	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:223)&#13;
+	at net.serenitybdd.screenplay.Actor.perform(Actor.java:204)&#13;
+	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:161)&#13;
+	at com.pinbus.qa.buscarviaje.task.BuscarViaje.performAs(BuscarViaje.java:36)&#13;
+	at com.pinbus.qa.buscarviaje.task.BuscarViaje$$EnhancerByCGLIB$$fb45e7f3.CGLIB$performAs$0(&lt;generated&gt;)&#13;
+	at com.pinbus.qa.buscarviaje.task.BuscarViaje$$EnhancerByCGLIB$$fb45e7f3$$FastClassByCGLIB$$1fcd1335.invoke(&lt;generated&gt;)&#13;
+	at net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)&#13;
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:478)&#13;
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:463)&#13;
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:438)&#13;
+	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:179)&#13;
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:166)&#13;
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:72)&#13;
+	at com.pinbus.qa.buscarviaje.task.BuscarViaje$$EnhancerByCGLIB$$fb45e7f3.performAs(&lt;generated&gt;)&#13;
+	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:223)&#13;
+	at net.serenitybdd.screenplay.Actor.perform(Actor.java:204)&#13;
+	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:161)&#13;
+	at com.pinbus.qa.buscarviaje.stepsdefinitions.BuscarViajeEnpinbusStepsDefinitios.elBuscaElViajeDeIda(BuscarViajeEnpinbusStepsDefinitios.java:56)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)&#13;
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)&#13;
+	at java.lang.reflect.Method.invoke(Unknown Source)&#13;
+	at cucumber.runtime.Utils$1.call(Utils.java:31)&#13;
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)&#13;
+	at cucumber.runtime.Utils.invoke(Utils.java:25)&#13;
+	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:37)&#13;
+	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:40)&#13;
+	at cucumber.api.TestStep.executeStep(TestStep.java:102)&#13;
+	at cucumber.api.TestStep.run(TestStep.java:83)&#13;
+	at cucumber.api.TestCase.run(TestCase.java:58)&#13;
+	at cucumber.runner.Runner.runPickle(Runner.java:80)&#13;
+	at cucumber.runtime.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:140)&#13;
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:68)&#13;
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:23)&#13;
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)&#13;
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)&#13;
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)&#13;
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)&#13;
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)&#13;
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)&#13;
+	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:73)&#13;
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:117)&#13;
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:55)&#13;
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)&#13;
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)&#13;
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)&#13;
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)&#13;
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)&#13;
+	at cucumber.api.junit.Cucumber$1.evaluate(Cucumber.java:126)&#13;
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)&#13;
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:89)&#13;
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:41)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:541)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:763)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:463)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:209)&#13;
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@placeholder='Destino']"}
+  (Session info: chrome=73.0.3683.86)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'RC-PC', ip: '172.23.85.130', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\SEMILL~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 73.0.3683.86, webStorageEnabled: true}
+Session ID: 88c20d803faf3b0a5e6883a0a5e68c45
+*** Element info: {Using=xpath, value=//input[@placeholder='Destino']}&#13;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)&#13;
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)&#13;
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)&#13;
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)&#13;
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)&#13;
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)&#13;
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)&#13;
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)&#13;
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)&#13;
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)&#13;
+	at net.thucydides.core.webdriver.WebDriverFacade.findElement(WebDriverFacade.java:222)&#13;
+	at net.serenitybdd.core.pages.WebElementResolverByLocator.resolveForDriver(WebElementResolverByLocator.java:16)&#13;
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.getElement(WebElementFacadeImpl.java:210)&#13;
+	at net.serenitybdd.core.pages.WebElementExpectations$3.apply(WebElementExpectations.java:63)&#13;
+	at net.serenitybdd.core.pages.WebElementExpectations$3.apply(WebElementExpectations.java:55)&#13;
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)&#13;
+	... 70 more&#13;
+&#13;
+</error>
+      </testcase>
+    </testsuite>
+  </testsuite>
+</testrun>
